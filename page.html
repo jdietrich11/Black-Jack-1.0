@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheeBlackJack</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <header class="title">
+      <h1 class="BJ">thee blackjack game</h1>
+      <p class="author">by Josh Dietrich</p>
+    </header>
+    <button class="NewGame hidden">New Game</button>
+    <button class="deal hidden">Deal</button>
+    <div class="money test">
+      <h2 class="bank">Bank:<span class="bankAmount"></span></h2>
+      <h3 class="bid">BID:<span class="bidAmount">0</span></h3>
+      <button class="upBtn">🔼</button><button class="downBtn">🔽</button>
+      <h3 class="dealTot">Dealer total: <span class="dealerTot">0</span></h3>
+      <button class="nHBtn hidden">Next Hand</button>
+      <h3 class="currTot">Current total: <span class="currTotAmou">0</span></h3>
+    </div>
+    <div class="deck">
+      <img class="card-1 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-2 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-3 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-4 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-5 deck" src="/deck.jpg" alt="Deck of cards" />
+    </div>
+
+    <div class="player deck">
+      <img class="card-6 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-7 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-8 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-9 deck" src="/deck.jpg" alt="Deck of cards" />
+      <img class="card-10 deck" src="/deck.jpg" alt="Deck of cards" />
+    </div>
+    <div class="test">
+      <button class="hitMe hidden" type="button">
+        <strong>hit me!</strong>
+      </button>
+      <button class="stand hidden" type="button">
+        <strong>stand!</strong>
+      </button>
+    </div>
+    <div class="overlay">
+      <div class="info">
+        <h3>User Info</h3>
+        <input type="text" placeholder="First Name" class="input firstName" />
+        <input type="text" placeholder="Last Name" class="input lastName" />
+        <input type="text" placeholder="UserName" class="input userName" />
+        <br />
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
